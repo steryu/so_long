@@ -1,6 +1,4 @@
 # so_long
-<img width="400" alt="so_long" src="https://user-images.githubusercontent.com/95487148/156528360-3ebbed22-7d0c-488e-950f-17d8ec22eebb.png">
-
 a mini 2D video game.
 Its purpose was to get used to working with textures, sprites, and some other very basic gameplay elements.
 

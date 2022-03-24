@@ -6,7 +6,7 @@
 /*   By: svan-ass <svan-ass@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/28 14:09:33 by svan-ass          #+#    #+#             */
-/*   Updated: 2022/03/01 14:08:58 by svan-ass         ###   ########.fr       */
+/*   Updated: 2022/03/24 13:04:42 by svan-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,8 +62,8 @@ int	render_screen(t_data *data)
 			map->x, map->y);
 		put_image_to_frame(data, data->player.current_img, \
 		data->player.x, data->player.y);
-		mlx_put_image_to_window(data->mlx, data->mlx_win, data->image, 0, 0);
 		map = map->next;
 	}
+	mlx_put_image_to_window(data->mlx, data->mlx_win, data->image, 0, 0);
 	return (0);
 }

@@ -1,35 +1,42 @@
 # so_long
-a mini 2D video game.
-Purpose
-Its purpose was to get used to working with textures, sprites, animations and some other very basic gameplay elements.
+A mini 2D video game.
+
+**Purpose**\
+The purpose was to get used to working with textures, sprites, animations and some other very basic gameplay elements.
 The project was written in C and made use of the MiniLibX library availibe of the school machines.
+
 ![so_long](https://user-images.githubusercontent.com/95487148/156332575-e7c72aaf-5233-465b-904b-da44ec4ea71d.gif)
 
-The game 
-the goal of the game was to walk trough the map with the WASD keys tocollect all the collectibles and end at the exit. 
+**The Game**\
+The goal of the game was to walk trough the map with the WASD keys tocollect all the collectibles and end at the exit. 
 
-process
+**Process**\
 First was to intizilae the mlx and window to the desired size.
-read and process the map
+
+- **Read and Process the Map**\
 The map needed an .ber map file that composed of 0, 1, C and E (open space, wall, collectible and exit).
-I used !get_next_line! (and other project I made) to read the map line for line and save it in a data struct linked list.
+I used [get_next_line](https://github.com/steryu/library) (an other project I made) to read the map line for line and save it in a data struct linked list.
 Then check the map for errors and the first part was done.
 
-loading sprites
-I then put all my self made spites in the data struct to push them to the screen later.
+- **Loading Sprites**\
+I then put all my self made spites in the data struct to push them to the screen later.\
+![cloudfloor](https://github.com/steryu/so_long/blob/main/sprites/pngs/cloudfloor.png)
+![cloud](https://github.com/steryu/so_long/blob/main/sprites/pngs/cloud.png)
+![wolkje](https://github.com/steryu/so_long/blob/main/sprites/pngs/wolkje.png)
 
-render screen
+- **Render Screen**\
 At this part I looped troguht the map struct and everytime you encountered a specific character you put the right spires to the frame.
 in order to that you first looped trough the spires and take the color of every pixel. once the image was buffered you then push it to the window.
-I used the !mlx tutorial! to make a custom function that does all of the above.
+I used the [MiniLibx Tutorial](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html) to make a custom function that does all of the above.
 
-Key input and animations
+- **Key Input and Animations**\
 Lastly i took care of the key input using hook events also explained in the tutorial. The animations i made by looping trough 9 spites and changing them every
 10 incremitaion. It may not be an reliable method, but it worked :).
 
+**Closing thoughts**\
 I learned how to create and image using its address and the right pixels. to learn pixel art (which was really fun) and fixining all the little game mechanics, for example walking collectiing and only exiting when all the collectibles were taken.
 It was a small project but its was our first graphical one and it felt like a real game.
 It made me really excited to make more projects like this one. 
 
-How to compile
-make && ./so_long $[INSERT_MAP].ber
+**How to compile**\
+``make && ./so_long maps/[INSERT_MAP].ber``

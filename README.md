@@ -13,7 +13,7 @@ The game challenges the player to navigate through a maze-like environment using
 The development process for this project was divided into several key stages:
 
 - **Map Reading and Processing**\
-The game world was defined by a .ber map file, which consisted of four types of characters - 0, 1, C, and E - representing open space, walls, collectibles, and exits, respectively. The map was read line by line using [get_next_line](https://github.com/steryu/library) (a project I made previously, and stored in a data structure linked list. Error-checking was also performed during this phase.
+The game world was defined by a .ber map file, which consisted of four types of characters - 0, 1, C, and E - representing open space, walls, collectibles, and exits, respectively. The map was read line by line using [get_next_line](https://github.com/steryu/library-42) (a project I made previously, and stored in a data structure linked list. Error-checking was also performed during this phase.
 
 - **Sprite Loading**\
 Next, self-designed sprites were added to the data structure for later rendering on the screen.\

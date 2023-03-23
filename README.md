@@ -1,9 +1,8 @@
 # so_long
 A mini 2D video game.
 
-**Purpose**\
-The purpose was to get used to working with textures, sprites, animations and some other very basic gameplay elements.
-The project was written in C and made use of the MiniLibX library availibe of the school machines.
+Objective
+The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which was available on the school's machines.
 
 ![so_long](https://user-images.githubusercontent.com/95487148/156332575-e7c72aaf-5233-465b-904b-da44ec4ea71d.gif)
 

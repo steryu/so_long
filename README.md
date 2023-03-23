@@ -32,4 +32,6 @@ Finally, the game's key inputs were handled using hook events as outlined in the
 Through the development of so_Long, I gained valuable experience in creating images using their addresses and manipulating individual pixels. I also enjoyed creating the pixel art assets and refining the little gameplay mechanics, such as walking, collecting items, and ensuring that the game only ends when all collectibles are obtained. Although this was a small project, it felt like a game and has inspired me to pursue further projects in game development.
 
 **How to compile**\
-``make && ./so_long maps/[INSERT_MAP].ber``
+``
+make && ./so_long maps/[INSERT_MAP].ber
+``

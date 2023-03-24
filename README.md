@@ -8,7 +8,7 @@ The aim of this project was to gain familiarity with fundamental game developmen
 ![so_long](https://user-images.githubusercontent.com/95487148/156332575-e7c72aaf-5233-465b-904b-da44ec4ea71d.gif)
 
 ### **The Game**
-The game challenges the player to navigate through a maze-like environment using the WASD keys, collecting all of the collectibles scattered throughout the map, and finally reaching the exit.
+The game challenges the player to navigate through a maze-like environment using the `W, A, S, D` keys, collecting all of the collectibles scattered throughout the map, and finally reaching the exit.
 
 ### **Development Process**
 The development process for this project was divided into several key stages:

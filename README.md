@@ -1,9 +1,6 @@
 # so_long
 A mini 2D video game.
 
-![score](<img width="218" alt="Screen Shot 2023-03-24 at 12 27 25 PM" src="https://user-images.githubusercontent.com/95487148/227509925-539e8a8b-4598-485e-8b97-40b661224db5.png">
-)
-
 **Objective**
 The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which is available on the school's machines.
 
@@ -24,7 +21,6 @@ Next, self-designed sprites were added to the data structure for later rendering
 ![cloud](https://github.com/steryu/so_long/blob/main/sprites/pngs/cloud.png)
 ![wolkje](https://github.com/steryu/so_long/blob/main/sprites/pngs/wolkje.png)
 
-
 - **Rendering the Screen**\
 The screen was rendered by iterating through the map data structure and placing the appropriate sprite at each location. This was accomplished by first reading the color of each pixel in the sprite image, buffering it and then pushing it to the window. Custom functions were developed for this purpose based on the [MiniLibx Tutorial](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html).
 
@@ -38,3 +34,5 @@ Through the development of so_Long, I gained valuable experience in creating ima
 ``
 make && ./so_long maps/[INSERT_MAP].ber
 ``
+
+<img src="https://github.com/steryu/so_long/blob/main/sprites/pngs/score.png" width="150" height="120">

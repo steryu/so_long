@@ -1,6 +1,8 @@
 # so_long
 A mini 2D video game.
 
+[![svan-ass's 42 so_long Score](https://badge42.vercel.app/api/v2/clfladlx3000608l58byc7e5w/project/2439931)](https://github.com/JaeSeoKim/badge42)
+
 ### **Objective**
 The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which is available on the school's machines.
 
@@ -34,5 +36,3 @@ Through the development of so_Long, I gained valuable experience in creating ima
 ``` sh
 make && ./so_long maps/[INSERT_MAP].ber
 ```
-
-<img src="https://github.com/steryu/so_long/blob/main/sprites/pngs/score.png" width="150" height="120">

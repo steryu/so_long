@@ -1,35 +1,40 @@
 # so_long
-a mini 2D video game.
-Purpose
-Its purpose was to get used to working with textures, sprites, animations and some other very basic gameplay elements.
-The project was written in C and made use of the MiniLibX library availibe of the school machines.
+A mini 2D video game.
+
+![score](<img width="218" alt="Screen Shot 2023-03-24 at 12 27 25 PM" src="https://user-images.githubusercontent.com/95487148/227509925-539e8a8b-4598-485e-8b97-40b661224db5.png">
+)
+
+**Objective**
+The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which is available on the school's machines.
+
 ![so_long](https://user-images.githubusercontent.com/95487148/156332575-e7c72aaf-5233-465b-904b-da44ec4ea71d.gif)
 
-The game 
-the goal of the game was to walk trough the map with the WASD keys tocollect all the collectibles and end at the exit. 
+**The Game**\
+The game challenges the player to navigate through a maze-like environment using the WASD keys, collecting all of the collectibles scattered throughout the map, and finally reaching the exit.
 
-process
-First was to intizilae the mlx and window to the desired size.
-read and process the map
-The map needed an .ber map file that composed of 0, 1, C and E (open space, wall, collectible and exit).
-I used !get_next_line! (and other project I made) to read the map line for line and save it in a data struct linked list.
-Then check the map for errors and the first part was done.
+**Development Process**\
+The development process for this project was divided into several key stages:
 
-loading sprites
-I then put all my self made spites in the data struct to push them to the screen later.
+- **Map Reading and Processing**\
+The game world was defined by a .ber map file, which consisted of four types of characters - 0, 1, C, and E - representing open space, walls, collectibles, and exits, respectively. The map was read line by line using [get_next_line](https://github.com/steryu/library-42) (a project I made previously, and stored in a data structure linked list. Error-checking was also performed during this phase.
 
-render screen
-At this part I looped troguht the map struct and everytime you encountered a specific character you put the right spires to the frame.
-in order to that you first looped trough the spires and take the color of every pixel. once the image was buffered you then push it to the window.
-I used the !mlx tutorial! to make a custom function that does all of the above.
+- **Sprite Loading**\
+Next, self-designed sprites were added to the data structure for later rendering on the screen.\
+![cloudfloor](https://github.com/steryu/so_long/blob/main/sprites/pngs/cloudfloor.png)
+![cloud](https://github.com/steryu/so_long/blob/main/sprites/pngs/cloud.png)
+![wolkje](https://github.com/steryu/so_long/blob/main/sprites/pngs/wolkje.png)
 
-Key input and animations
-Lastly i took care of the key input using hook events also explained in the tutorial. The animations i made by looping trough 9 spites and changing them every
-10 incremitaion. It may not be an reliable method, but it worked :).
 
-I learned how to create and image using its address and the right pixels. to learn pixel art (which was really fun) and fixining all the little game mechanics, for example walking collectiing and only exiting when all the collectibles were taken.
-It was a small project but its was our first graphical one and it felt like a real game.
-It made me really excited to make more projects like this one. 
+- **Rendering the Screen**\
+The screen was rendered by iterating through the map data structure and placing the appropriate sprite at each location. This was accomplished by first reading the color of each pixel in the sprite image, buffering it and then pushing it to the window. Custom functions were developed for this purpose based on the [MiniLibx Tutorial](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html).
 
-How to compile
-make && ./so_long $[INSERT_MAP].ber
+- **Handling Key Input and Animations**
+Finally, the game's key inputs were handled using hook events as outlined in the tutorial, while the animations were created by cycling through a set of 9 sprites and changing them every 10 iterations. Although not a particularly reliable approach, it proved to be effective.
+
+**Conclusion**\
+Through the development of so_Long, I gained valuable experience in creating images using their addresses and manipulating individual pixels. I also enjoyed creating the pixel art assets and refining the little gameplay mechanics, such as walking, collecting items, and ensuring that the game only ends when all collectibles are obtained. Although this was a small project, it felt like a game and has inspired me to pursue further projects in game development.
+
+**How to compile**\
+``
+make && ./so_long maps/[INSERT_MAP].ber
+``

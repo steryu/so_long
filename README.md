@@ -1,6 +1,9 @@
 # so_long
 A mini 2D video game.
 
+![score](<img width="218" alt="Screen Shot 2023-03-24 at 12 27 25 PM" src="https://user-images.githubusercontent.com/95487148/227509925-539e8a8b-4598-485e-8b97-40b661224db5.png">
+)
+
 **Objective**
 The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which is available on the school's machines.
 

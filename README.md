@@ -1,15 +1,15 @@
 # so_long
 A mini 2D video game.
 
-**Objective**
+### **Objective**
 The aim of this project was to gain familiarity with fundamental game development components such as textures, sprites, animations, and basic gameplay mechanics. The game was implemented in the C programming language and utilized the MiniLibX library, which is available on the school's machines.
 
 ![so_long](https://user-images.githubusercontent.com/95487148/156332575-e7c72aaf-5233-465b-904b-da44ec4ea71d.gif)
 
-**The Game**\
+### **The Game**
 The game challenges the player to navigate through a maze-like environment using the WASD keys, collecting all of the collectibles scattered throughout the map, and finally reaching the exit.
 
-**Development Process**\
+### **Development Process**
 The development process for this project was divided into several key stages:
 
 - **Map Reading and Processing**\
@@ -27,11 +27,11 @@ The screen was rendered by iterating through the map data structure and placing 
 - **Handling Key Input and Animations**
 Finally, the game's key inputs were handled using hook events as outlined in the tutorial, while the animations were created by cycling through a set of 9 sprites and changing them every 10 iterations. Although not a particularly reliable approach, it proved to be effective.
 
-**Conclusion**\
+### **Conclusion**
 Through the development of so_Long, I gained valuable experience in creating images using their addresses and manipulating individual pixels. I also enjoyed creating the pixel art assets and refining the little gameplay mechanics, such as walking, collecting items, and ensuring that the game only ends when all collectibles are obtained. Although this was a small project, it felt like a game and has inspired me to pursue further projects in game development.
 
-**How to compile**
-```
+### **How to compile**
+``` sh
 make && ./so_long maps/[INSERT_MAP].ber
 ```
 
